@@ -7,7 +7,7 @@ var validLetters =
 // Var of losses,wins,guesses left, and guessed, all should show up in empty values or arrays.
 var win= 0;
 var losses= 0;
-var guessesLeft= 8;
+var guessesLeft= 10;
 var guessedLetters= [];
 var userGuesses = document.onkeyup;
 
@@ -26,7 +26,7 @@ document.onkeyup = function(event){
 if (validLetters.indexOf(userGuesses) > -1){
     if (userGuesses === computerGuesses){
         win++;
-        guessesLeft = 8;
+        guessesLeft = 10;
         guessedLetters = [];
         computerGuesses = validLetters[Math.floor(Math.random() * validLetters.length)];{
             console.log(computerGuesses)
